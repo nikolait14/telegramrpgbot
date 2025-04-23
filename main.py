@@ -23,6 +23,8 @@ def reg1(msg: Message):
     bot.register_next_step_handler(msg, reg2)
 
 
+
+
 def reg2(msg: Message):
     tim[msg.chat.id]["name"] = msg.text
     but = telebot.types.ReplyKeyboardMarkup(True, False)
